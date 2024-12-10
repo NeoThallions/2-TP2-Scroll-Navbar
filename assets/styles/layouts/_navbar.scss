@@ -1,0 +1,43 @@
+nav {
+    background-color: $white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    @include childCenter;
+
+    ul {
+        @include alignChildren(space-between);
+
+        li {
+            position: relative;
+            margin: 0 10px;
+            padding: 20px 0px;
+            text-align: center;
+            &:hover {
+                color: $animNav;
+            }
+            &:hover:before {
+                content: "";
+                height: 5px;
+                width: 100%;
+                position: absolute;
+                background-color: $animNav;
+                transform: translateY(-20px);
+            }
+        }
+        #btn {
+            padding: 7px;
+            border-radius: 50px;
+            margin: 10px;
+            border: none;
+            background-color: rgb(199, 199, 199);
+            &:hover {
+                background-color: grey;
+                color: rgb(199, 199, 199);
+            }
+            &:hover::before {
+                background: none;
+            }
+        }
+    }
+}

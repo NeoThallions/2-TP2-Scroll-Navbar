@@ -1,3 +1,61 @@
+// déclaration des fonts
+@font-face {
+    font-family: "montserrat-medium";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "montserrat-thin";
+    src: url(../fonts/Montserrat-Thin.ttf);
+}
+
+// déclaration des variables
+
+$font1: montserrat-medium;
+$font2: montserrat-thin;
+$white: rgb(247, 247, 247);
+$black: rgb(36, 35, 35);
+$animNav: rgb(102, 40, 133);
+
+// centrer un enfant unique
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// center plusieurs enfants, mais comme on ne sais pas encore la valeur du 'justify content', on met une variable et on précisera dans l'@include.
+// ex:@include alignChildren(space-around)
+@mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: $font1;
+}
+
 body {
-    background: rgb(70, 38, 38);
+    background: $white;
+    margin: 0 auto;
+}
+button {
+    text-transform: uppercase;
+    &:hover {
+        mix-blend-mode: difference;
+    }
+}
+a,
+a:visited {
+    font-family: $font1;
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: $black;
 }

@@ -1,0 +1,52 @@
+.game {
+    height: 400px;
+    background-color: $black;
+
+    .gaming-container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-family: $font1;
+        width: 80%;
+        margin: 0 auto;
+
+        h4,
+        p,
+        button {
+            color: $white;
+        }
+        h4,
+        button {
+            text-transform: uppercase;
+        }
+        .gaming {
+            position: relative;
+            width: 30%;
+            padding: 50px 20px;
+            font-size: 0.9rem;
+
+            img {
+                width: 90%;
+            }
+            h4 {
+                padding-top: 30px;
+                font-size: 0.8rem;
+            }
+            p {
+                font-size: 0.7rem;
+                padding: 20px 0;
+            }
+            button {
+                position: absolute;
+                bottom: 0px;
+                transform: translate(-50%);
+                height: 30px;
+                width: 150px;
+                font-size: 0.7rem;
+                border: 2px solid rgba(255, 255, 255, 0.404);
+                background-color: rgba(255, 255, 255, 0.048);
+                color: $white;
+            }
+        }
+    }
+}

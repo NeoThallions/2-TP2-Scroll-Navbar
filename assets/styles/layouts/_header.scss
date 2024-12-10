@@ -1,0 +1,35 @@
+header {
+    background: url(../img/bg.webp) center/cover fixed;
+    // height: 80vh;
+    .main-container {
+        text-align: center;
+        padding: 50px;
+        h1 {
+            margin: 30px;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+        button {
+            height: 40px;
+            width: 300px;
+            border: 2px solid rgba(255, 255, 255, 0.404);
+            background-color: rgba(255, 255, 255, 0.048);
+            color: $white;
+        }
+    }
+    .txt {
+        background-color: $white;
+        p {
+            max-width: 70%;
+            padding: 35px;
+            margin: 0 auto;
+            color: $black;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+    }
+}

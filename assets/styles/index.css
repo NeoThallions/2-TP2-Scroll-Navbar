@@ -1,3 +1,307 @@
+@font-face {
+  font-family: "montserrat-medium";
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "montserrat-thin";
+  src: url(../fonts/Montserrat-Thin.ttf);
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: montserrat-medium;
+}
+
 body {
-  background: rgb(70, 38, 38);
+  background: rgb(247, 247, 247);
+  margin: 0 auto;
+}
+
+button {
+  text-transform: uppercase;
+}
+button:hover {
+  mix-blend-mode: difference;
+}
+
+a,
+a:visited {
+  font-family: montserrat-medium;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: rgb(36, 35, 35);
+}
+
+nav {
+  background-color: rgb(247, 247, 247);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul li {
+  position: relative;
+  margin: 0 10px;
+  padding: 20px 0px;
+  text-align: center;
+}
+nav ul li:hover {
+  color: rgb(102, 40, 133);
+}
+nav ul li:hover:before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(102, 40, 133);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+nav ul #btn {
+  padding: 7px;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(199, 199, 199);
+}
+nav ul #btn:hover {
+  background-color: grey;
+  color: rgb(199, 199, 199);
+}
+nav ul #btn:hover::before {
+  background: none;
+}
+
+header {
+  background: url(../img/bg.webp) center/cover fixed;
+}
+header .main-container {
+  text-align: center;
+  padding: 50px;
+}
+header .main-container h1 {
+  margin: 30px;
+  color: rgb(247, 247, 247);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+header .main-container button {
+  height: 40px;
+  width: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.404);
+  background-color: rgba(255, 255, 255, 0.048);
+  color: rgb(247, 247, 247);
+}
+header .txt {
+  background-color: rgb(247, 247, 247);
+}
+header .txt p {
+  max-width: 70%;
+  padding: 35px;
+  margin: 0 auto;
+  color: rgb(36, 35, 35);
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.game {
+  height: 400px;
+  background-color: rgb(36, 35, 35);
+}
+.game .gaming-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-family: montserrat-medium;
+  width: 80%;
+  margin: 0 auto;
+}
+.game .gaming-container h4,
+.game .gaming-container p,
+.game .gaming-container button {
+  color: rgb(247, 247, 247);
+}
+.game .gaming-container h4,
+.game .gaming-container button {
+  text-transform: uppercase;
+}
+.game .gaming-container .gaming {
+  position: relative;
+  width: 30%;
+  padding: 50px 20px;
+  font-size: 0.9rem;
+}
+.game .gaming-container .gaming img {
+  width: 90%;
+}
+.game .gaming-container .gaming h4 {
+  padding-top: 30px;
+  font-size: 0.8rem;
+}
+.game .gaming-container .gaming p {
+  font-size: 0.7rem;
+  padding: 20px 0;
+}
+.game .gaming-container .gaming button {
+  position: absolute;
+  bottom: 0px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  height: 30px;
+  width: 150px;
+  font-size: 0.7rem;
+  border: 2px solid rgba(255, 255, 255, 0.404);
+  background-color: rgba(255, 255, 255, 0.048);
+  color: rgb(247, 247, 247);
+}
+
+.news {
+  margin: 50px auto;
+}
+.news .headBand {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 70%;
+  margin: 0 auto;
+}
+.news .headBand h3 {
+  text-transform: uppercase;
+  font-family: montserrat-thin;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+.news .headBand p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.news .headBand button {
+  height: 30px;
+  width: 150px;
+  font-size: 0.7rem;
+}
+.news .headBand button i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+.news .headBand button:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.news .event-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 70%;
+  margin: 40px auto;
+}
+.news .event-container .event {
+  position: relative;
+  min-height: 480px;
+  padding: 0 40px;
+}
+.news .event-container .event img {
+  width: 100%;
+}
+.news .event-container .event:first-child {
+  padding-left: 0;
+  padding-right: 80px;
+}
+.news .event-container .event:last-child {
+  padding-left: 80px;
+  padding-right: 0px;
+}
+.news .event-container .event h4 {
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+.news .event-container .event p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 17px;
+}
+.news .event-container .event a {
+  position: absolute;
+  bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.news .event-container .event a:hover {
+  color: rgb(102, 40, 133);
+}
+.news .event-container .event a:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+footer {
+  background-color: white;
+}
+footer .infos-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 70%;
+  margin: 0px auto;
+  padding: 50px 0;
+  height: 400px;
+}
+footer .infos-container h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+footer .infos-container a {
+  color: rgb(102, 40, 133);
+}
+footer .infos-container .info li {
+  text-transform: capitalize;
+  line-height: 25px;
+}
+footer .infos-container .info li:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+footer .infos-container .parents p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 5px 40px 20px 0;
+}
+footer .infos-container .parents a:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+footer .infos-container .contact-container .contact p {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=index.css.map */
