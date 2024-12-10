@@ -1,9 +1,11 @@
 header {
     background: url(../img/bg.webp) center/cover fixed;
-    // height: 80vh;
     .main-container {
         text-align: center;
         padding: 50px;
+        img {
+            padding-top: 50px;
+        }
         h1 {
             margin: 30px;
             color: $white;

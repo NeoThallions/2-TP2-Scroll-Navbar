@@ -38,6 +38,8 @@ a:visited {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   background-color: rgb(247, 247, 247);
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -102,6 +104,9 @@ header {
 header .main-container {
   text-align: center;
   padding: 50px;
+}
+header .main-container img {
+  padding-top: 50px;
 }
 header .main-container h1 {
   margin: 30px;
@@ -268,18 +273,22 @@ header .txt p {
 footer {
   background-color: white;
 }
+footer h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 0.7rem;
+}
 footer .infos-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   width: 70%;
   margin: 0px auto;
   padding: 50px 0;
-  height: 400px;
-}
-footer .infos-container h4 {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
+  height: 330px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.116);
 }
 footer .infos-container a {
   color: rgb(102, 40, 133);
@@ -293,7 +302,6 @@ footer .infos-container .info li:hover {
           transform: translateX(5px);
 }
 footer .infos-container .parents p {
-  font-size: 0.7rem;
   font-weight: bold;
   line-height: 18px;
   padding: 5px 40px 20px 0;
@@ -302,6 +310,72 @@ footer .infos-container .parents a:hover {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
-footer .infos-container .contact-container .contact p {
+footer .infos-container .contact-container .network {
+  margin-top: 20px;
+}
+footer .infos-container .contact-container .network ul {
+  margin-top: px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90px;
+  margin-bottom: 30px;
+}
+footer .infos-container .contact-container .network ul i {
+  color: black;
+}
+footer .infos-container .contact-container .network p {
   font-size: 0.7rem;
+  font-weight: bold;
+}
+footer .press-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin: 30px auto;
+  width: 70%;
+}
+footer .press-container p {
+  font-weight: bold;
+}
+footer .press-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer .press-container ul li img {
+  width: 50px;
+}
+footer .partners {
+  background-color: rgb(36, 35, 35);
+  height: 120px;
+  margin: 0 auto;
+}
+footer .partners h4 {
+  color: rgb(247, 247, 247);
+  text-align: center;
+}
+footer .partners ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .partners ul img {
+  width: 50px;
 }/*# sourceMappingURL=index.css.map */

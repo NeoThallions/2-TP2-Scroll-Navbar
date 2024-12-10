@@ -1,17 +1,21 @@
 footer {
     background-color: white;
+    h4 {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 0.7rem;
+    }
     .infos-container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         width: 70%;
         margin: 0px auto;
         padding: 50px 0;
-        height: 400px;
-        h4 {
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-        }
+        height: 330px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.116);
         a {
             color: $animNav;
         }
@@ -27,7 +31,6 @@ footer {
         }
         .parents {
             p {
-                font-size: 0.7rem;
                 font-weight: bold;
                 line-height: 18px;
                 padding: 5px 40px 20px 0;
@@ -40,10 +43,62 @@ footer {
         }
         .contact-container {
             .contact {
+            }
+            .network {
+                margin-top: 20px;
+                ul {
+                    margin-top: px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90px;
+                    margin-bottom: 30px;
+                    i {
+                        color: black;
+                    }
+                }
                 p {
                     font-size: 0.7rem;
+                    font-weight: bold;
                 }
             }
+        }
+    }
+    .press-container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 30px auto;
+        width: 70%;
+        p {
+            font-weight: bold;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .partners {
+        background-color: $black;
+        height: 120px;
+        margin: 0 auto;
+        h4 {
+            color: $white;
+            text-align: center;
+        }
+        ul {
+            @include childCenter;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 50px;
+            }
+
+            width: 70%;
+            margin: 0 auto;
         }
     }
 }
