@@ -1,17 +1,14 @@
 const nav = document.querySelector("nav");
 
-let value1 = window.scrollY;
-console.log(value1);
+let lastScroll = 0;
+
 window.addEventListener("scroll", () => {
-    // console.log(window.scrollY);
-
-    let value2 = window.scrollY;
-    // let value = value2 - value1;
-    console.log(value2);
-
-    // if (value2 > value1) {
-    //     console.log("ça descend");
-    // } else {
-    //     console.log("ça monte!!!");
-    // }
+    if (window.scrollY < lastScroll) {
+        nav.style.top = "0px";
+        nav.style.transition = "0.5s";
+    } else {
+        nav.style.top = "-60px";
+        nav.style.transition = "0.5s";
+    }
+    lastScroll = window.scrollY;
 });
